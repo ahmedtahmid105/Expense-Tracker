@@ -1,6 +1,6 @@
 print ("Welcome to the Daily Expense Tracker!")
-print ()
-print ("Menu:")
+
+print ("\nMenu:")
 print ("1. Add a new expense")
 print ("2. View all expenses")
 print ("3. Calculate total and average expense")
