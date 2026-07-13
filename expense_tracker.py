@@ -12,5 +12,24 @@ while True :
         print ("Exiting the Daily Expense Tracker. Goodbye!")
         break
     elif choose_option == "1" :
-        expense_list = list(map(float,input().split()))
+        x = float(input())
+        expense_list.append(x)
         print("Expense added successfully!")
+    elif choose_option == "2" :
+        if expense_list == [] :
+            print ("No expenses recorded yet.")
+        else :
+            print ("Your expenses:")
+            for index, value in enumerate (expense_list,1) :
+                print (f'{index}. {value}')
+    elif choose_option ==  "3" :
+        if expense_list == [] :
+            print ("No expenses recorded yet.")
+        else :
+            total = sum(expense_list)
+            average = total / len(expense_list)
+            print(f"Total expense: {total}")
+            print(f'Average expense: {average}')
+    elif choose_option == "4" :
+        expense_list.clear()
+        print("All expenses cleared.")
