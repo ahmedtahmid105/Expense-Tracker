@@ -33,3 +33,5 @@ while True :
     elif choose_option == "4" :
         expense_list.clear()
         print("All expenses cleared.")
+    else :
+        print ("Invalid choice. Please try again.")
